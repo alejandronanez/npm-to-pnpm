@@ -1,0 +1,30 @@
+{
+  "workspaces": [
+    "apps/*",
+    "lib/*"
+  ],
+  "name": "npm-to-pnpm",
+  "version": "1.0.0",
+  "description": "Migrating from npm monorepos to pnpm monorepos",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "check": "turbo run typecheck test",
+    "dev:dashboard": "turbo run dev --scope=dashboard --include-dependencies",
+    "dev:blog": "turbo run dev --scope=dashboard --include-dependencies",
+    "dev:copyright": "turbo run dev --scope=dashboard --include-dependencies"
+  },
+  "keywords": [],
+  "author": "Alejandro Nanez",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.1.10"
+  },
+  "volta": {
+    "node": "14.19.1",
+    "npm": "8.6.0"
+  }
+}
