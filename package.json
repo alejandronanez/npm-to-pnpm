@@ -15,7 +15,8 @@
     "check": "turbo run typecheck test",
     "dev:dashboard": "turbo run dev --scope=dashboard --include-dependencies",
     "dev:blog": "turbo run dev --scope=dashboard --include-dependencies",
-    "dev:copyright": "turbo run dev --scope=dashboard --include-dependencies"
+    "dev:copyright": "turbo run dev --scope=dashboard --include-dependencies",
+    "postinstall": "echo \"👋 from the root of the project\""
   },
   "keywords": [],
   "author": "Alejandro Nanez",

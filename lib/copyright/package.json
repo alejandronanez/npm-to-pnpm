@@ -10,7 +10,8 @@
     "dev": "parcel watch",
     "build": "parcel build",
     "typecheck": "tsc --noEmit src/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "echo \"👋 from lib/internal-package\""
   },
   "keywords": [],
   "author": "",
